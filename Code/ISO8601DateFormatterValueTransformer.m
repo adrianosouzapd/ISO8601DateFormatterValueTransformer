@@ -25,7 +25,6 @@
 + (instancetype)defaultISO8601DateFormatter
 {
     ISO8601DateFormatter *iso8601DateFormatter = [ISO8601DateFormatter new];
-    iso8601DateFormatter.defaultTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
     iso8601DateFormatter.includeTime = YES;
     iso8601DateFormatter.parsesStrictly = YES;
     return iso8601DateFormatter;
